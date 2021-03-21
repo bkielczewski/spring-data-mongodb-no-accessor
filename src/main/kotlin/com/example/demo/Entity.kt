@@ -8,9 +8,13 @@ data class Entity(
         @Id
         val id: String? = null,
         val fooWorks: Foo = Foo.BAR,
-        val foosDont: Set<Foo> = emptySet()
+        val foosDont: Set<Foo> = emptySet(),
+        val stringsWork: Set<String> = emptySet(),
+        val barsWork: Set<Bar> = emptySet(),
 )
 
 enum class Foo {
         BAR
 }
+
+data class Bar(val foo: String)
