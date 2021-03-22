@@ -9,6 +9,7 @@ data class Entity(
         val id: String? = null,
         val fooWorks: Foo = Foo.BAR,
         val foosDont: Set<Foo> = emptySet(),
+        val anysDont: Map<String, Any> = emptyMap(),
         val stringsWork: Set<String> = emptySet(),
         val barsWork: Set<Bar> = emptySet(),
 )
